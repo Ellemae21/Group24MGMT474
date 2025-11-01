@@ -7,40 +7,85 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
       background-color: #f8f9fa;
       color: #333;
-      margin: 0;
-      padding: 0;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      font-size: 1.2em;
       text-align: center;
     }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      width: 100%;
+      text-align: center;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    /* Main content area */
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+      flex: 1;
+      text-align: center;
+    }
+
     header img {
       width: 100%;
       height: auto;
       max-height: 400px;
       object-fit: cover;
+      border-radius: 8px;
     }
-    main {
-      padding: 20px;
-    }
+
     h1 {
       color: #2c3e50;
       margin-bottom: 0.3em;
     }
+
     h2 {
       color: #555;
       font-weight: normal;
     }
+
     a {
       color: #007bff;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .dataset {
       margin-top: 20px;
       font-size: 1.1em;
     }
+
     .team {
       display: flex;
       flex-wrap: wrap;
@@ -48,6 +93,7 @@
       gap: 30px;
       margin-top: 40px;
     }
+
     .member {
       background-color: white;
       border-radius: 12px;
@@ -55,11 +101,13 @@
       width: 220px;
       padding: 20px;
     }
+
     .member img {
       width: 100%;
       border-radius: 10px;
       margin-bottom: 15px;
     }
+
     .member h3 {
       margin: 5px 0;
       color: #333;
@@ -67,56 +115,70 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="Mainphoto.png" alt="Project Banner">
-  </header>
 
-  <main>
-    <h1>Project Title: How The City Decides When You Can Breathe</h1>
-    <h2>Group 24-003 · MGMT 474 · Professor Davi Moreira</h2>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home Page</a>
+    <a href="milestones.html">Project Milestones</a>
+    <a href="additional.html">Additional Information</a>
+  </div>
 
-    <div class="dataset">
-      <p>Access our dataset here: 
-        <a href="https://archive.ics.uci.edu/dataset/360/air+quality" target="_blank">
-          Air Quality Dataset (UCI Machine Learning Repository)
-        </a>
-      </p>
-    </div>
+  <!-- Main Content -->
+  <div class="content">
+    <header>
+      <img src="Mainphoto.png" alt="Project Banner">
+    </header>
 
-    <div class="team">
-      <div class="member">
-        <img src="Ella.png" alt="Ella Dawes">
-        <h3>Ella Dawes</h3>
-        <p>
-          <a href="mailto:dawese@purdue.edu">Email</a> · 
-          <a href="https://www.linkedin.com/in/ella-dawes" target="_blank">LinkedIn</a>
+    <main>
+      <h1>Project Title: How The City Decides When You Can Breathe</h1>
+      <h2>Group 24-003 · MGMT 474 · Professor Davi Moreira</h2>
+
+      <div class="dataset">
+        <p>Access our dataset here: 
+          <a href="https://archive.ics.uci.edu/dataset/360/air+quality" target="_blank">
+            Air Quality Dataset (UCI Machine Learning Repository)
+          </a>
         </p>
       </div>
-      <div class="member">
-        <img src="AndrewO.png" alt="Andrew Oberholzer">
-        <h3>Andrew Oberholzer</h3>
-        <p>
-          <a href="mailto:aoberhol@purdue.edu">Email</a> · 
-          <a href="https://www.linkedin.com/in/andrew-oberholzer-b33466249" target="_blank">LinkedIn</a>
-        </p>
+
+      <div class="team">
+        <div class="member">
+          <img src="Ella.png" alt="Ella Dawes">
+          <h3>Ella Dawes</h3>
+          <p>
+            <a href="mailto:dawese@purdue.edu">Email</a> · 
+            <a href="https://www.linkedin.com/in/ella-dawes" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+        <div class="member">
+          <img src="AndrewO.png" alt="Andrew Oberholzer">
+          <h3>Andrew Oberholzer</h3>
+          <p>
+            <a href="mailto:aoberhol@purdue.edu">Email</a> · 
+            <a href="https://www.linkedin.com/in/andrew-oberholzer-b33466249" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+        <div class="member">
+          <img src="Max.png" alt="Max Matteucci">
+          <h3>Max Matteucci</h3>
+          <p>
+            <a href="mailto:mmatteuc@purdue.edu">Email</a> · 
+            <a href="https://www.linkedin.com/in/max-matteucci-089aa5256" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+        <div class="member">
+          <img src="AndrewH.png" alt="Andrew House">
+          <h3>Andrew House</h3>
+          <p>
+            <a href="mailto:house27@purdue.edu">Email</a> · 
+            <a href="https://www.linkedin.com/in/andrew-house-251085249" target="_blank">LinkedIn</a>
+          </p>
+        </div>
       </div>
-      <div class="member">
-        <img src="Max.png" alt="Max Matteucci">
-        <h3>Max Matteucci</h3>
-        <p>
-          <a href="mailto:mmatteuc@purdue.edu">Email</a> · 
-          <a href="https://www.linkedin.com/in/max-matteucci-089aa5256" target="_blank">LinkedIn</a>
-        </p>
-      </div>
-      <div class="member">
-        <img src="AndrewH.png" alt="Andrew House">
-        <h3>Andrew House</h3>
-        <p>
-          <a href="mailto:house27@purdue.edu">Email</a> · 
-          <a href="https://www.linkedin.com/in/andrew-house-251085249" target="_blank">LinkedIn</a>
-        </p>
-      </div>
-    </div>
-  </main>
+    </main>
+  </div>
+
 </body>
 </html>
+
