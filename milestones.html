@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Milestones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      width: 100%;
+      text-align: center;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    /* Main content */
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+      flex: 1;
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+
+    header img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+    }
+
+    .milestone-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .milestone {
+      background: white;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .milestone:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .milestone a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .milestone a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">Home Page</a>
+    <a href="milestones.html">Project Milestones</a>
+    <a href="additional.html">Additional Information</a>
+  </div>
+
+  <div class="content">
+    <header>
+      <img src="Mainphoto.png" alt="Project Banner">
+    </header>
+
+    <h1>Our Project Milestones</h1>
+    <p>
+      Here are our milestones throughout the way. Click below to view each part of our project:
+    </p>
+
+    <div class="milestone-links">
+      <div class="milestone">
+        <h2>Initial Project Proposal</h2>
+        <p>Outlines our objectives, dataset, and motivation.</p>
+        <a href="Projectproposal.pdf" target="_blank">View Proposal</a>
+      </div>
+
+      <div class="milestone">
+        <h2>Simple Model & Performance Evaluation</h2>
+        <p>Shows our first predictive model and early results.</p>
+        <a href="Simplemilestone.pdf" target="_blank">View Simple Model</a>
+      </div>
+
+      <div class="milestone">
+        <h2>More Complex Models & Evaluation</h2>
+        <p>Describes advanced models and improved forecasting results.</p>
+        <a href="Complexmilestone.pdf" target="_blank">View Complex Model</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
