@@ -49,6 +49,11 @@
       background-color: #34495e;
     }
 
+    .sidebar a.active {
+      background-color: #1a252f;
+      font-weight: bold;
+    }
+
     .menu-toggle {
       display: none;
       position: fixed;
@@ -133,6 +138,7 @@
     <a href="index.html">Home Page</a>
     <a href="milestones.html">Project Milestones</a>
     <a href="additional.html">Additional Information</a>
+    <a href="importance.html">Why This Project Matters</a>
   </div>
 
   <div class="content">
@@ -144,7 +150,7 @@
     <p>View our reference materials and sources used throughout this project:</p>
 
     <div class="link-box">
-      <a href="Sources.pdf" target="_blank"> View Project Sources (PDF)</a>
+      <a href="Sources.pdf" target="_blank">View Project Sources (PDF)</a>
     </div>
   </div>
 
@@ -152,6 +158,16 @@
     function toggleMenu() {
       document.getElementById('sidebar').classList.toggle('active');
     }
+
+    // Highlight current page
+    const path = window.location.pathname.split("/").pop();
+    const links = document.querySelectorAll('.sidebar a');
+    links.forEach(link => {
+      if (link.getAttribute('href') === path) {
+        link.classList.add('active');
+      }
+    });
   </script>
 </body>
 </html>
+
